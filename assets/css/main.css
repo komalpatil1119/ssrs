@@ -2581,7 +2581,7 @@ img {
 }
 
 .form-control {
-  height: 62px;
+  height: 45px;
   border-radius: 8px;
   border: 1px solid var(--border-color1);
   display: inline-flex;
@@ -3386,10 +3386,11 @@ img {
 }
 @media (max-width: 500px) {
   .section-top2__title {
-    font-size: 24px;
+    font-size: 25px;
     line-height: 26px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
+
   .section-top2__title br {
     display: none;
   }
@@ -3412,7 +3413,7 @@ img {
   color: var(--text-color1);
   text-align: center;
   font-family: var(--body-font);
-  font-size: 18px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -3424,11 +3425,11 @@ img {
 }
 
 .breadcrumb {
-  padding: 220px 0 65px 0;
+  padding: 170px 0 65px 0;
 }
 @media (max-width: 449px) {
   .breadcrumb {
-    padding: 165px 0 65px 0;
+    padding: 100px 0 40px 0;
   }
 }
 .breadcrumb-wrapper {
@@ -3447,12 +3448,7 @@ img {
   text-transform: capitalize;
   text-align: left;
 }
-@media (max-width: 767px) {
-  .breadcrumb-content__title {
-    font-size: 36px;
-    line-height: 42px;
-  }
-}
+
 .breadcrumb-content__items {
   display: flex;
   align-items: center;
@@ -3494,7 +3490,7 @@ img {
 }
 @media (max-width: 449px) {
   .breadcrumb-thumb-wrapper .thumb1 {
-    display: none;
+    display: block;
   }
 }
 .breadcrumb-thumb-wrapper .thumb2 {
@@ -3517,7 +3513,15 @@ img {
   left: -34px;
   bottom: 52px;
 }
-
+@media (max-width: 767px) {
+  .breadcrumb-content__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .breadcrumb-content__items li {
+    font-size: 15px;
+  }
+}
 @media (max-width: 1199px) {
   .main-sidebar {
     margin-top: 30px;
@@ -7026,8 +7030,8 @@ img {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(150px);
   position: absolute;
-  left: 60px;
-  top: 46%;
+  left: 300px;
+  top: 15%;
   transform: translateY(-50%);
 }
 @media (max-width: 1199px) {
@@ -7351,10 +7355,77 @@ img {
 .course2 {
   background-color: var(--bg-color1);
   position: relative;
+  padding: 60px 0px 70px;
 }
 .course2-card {
   border-radius: 10px;
   background: var(--white);
+}
+/* Feature Section */
+.feature-box {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Feature Icons */
+.feature-icon {
+    font-size: 42px;
+    color: #0095c6; /* Primary theme color */
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-box:hover .feature-icon {
+    color: #00204e; /* Accent color on hover */
+    transform: scale(1.1);
+}
+
+/* Feature Title */
+.feature-box h5 {
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #5a5a5a;
+}
+.ben-section{
+  padding: 60px 0px;
+}
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .feature-box {
+        margin-bottom: 20px;
+    }
+
+    .feature-icon {
+        font-size: 36px;
+    }
+}
+
+.visions{
+  padding: 50px 0px;
+}
+.comment-box{
+  display: flex;
+  
+}
+.comment-box p{
+ font-size: 18px;
+ line-height: 22px;
+}
+.comment-author img{
+  border-radius: 20px;
+  margin-right: 20px;
 }
 .course2-card__thumb {
   position: relative;
@@ -7393,7 +7464,7 @@ img {
   padding-right: 4px;
 }
 .course2-card-content {
-  padding: 20px 20px 24px 20px;
+  padding: 20px 10px 20px 10px;
 }
 .course2-card-content-top {
   display: flex;
@@ -7419,9 +7490,9 @@ img {
 .course2-card__title {
   color: var(--black2);
   font-family: var(--title-font);
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 28px;
 }
 .course2-card-meta {
@@ -7482,10 +7553,18 @@ img {
   top: 218px;
   z-index: 1;
 }
+.mb-box{
+  margin-bottom: 70px;
+}
 @media (max-width: 575px) {
   .course2__shape2 {
     display: none;
   }
+  .course2 {
+    background-color: var(--bg-color1);
+    position: relative;
+    padding: 60px 0px 40px;
+}
 }
 .course2__shape3 {
   position: absolute;
@@ -7527,6 +7606,7 @@ img {
 @media (max-width: 449px) {
   .course2-bottom {
     margin-top: 30px;
+    justify-content: center;
   }
 }
 .course2-bottom::after {
@@ -7791,18 +7871,27 @@ img {
   height: 16px;
   border-radius: 999px;
   border-color: var(--theme-color3);
+  height: 100%;
 }
 
 .course3-card {
   border-radius: 10px;
   background: var(--white);
   box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.04);
-  padding: 60px 20px 30px 20px;
+  padding: 60px 20px 0px 20px;
   text-align: center;
   transition: 0.4s all ease-in-out;
   position: relative;
   z-index: 3;
   margin-top: 40px;
+   height: 100%;
+}
+.course3-card__icon i{
+  font-size: 35px;
+  color:#fff;
+}
+.course3-card:hover .course3-card__icon i {
+  color: #00204e;
 }
 @media (max-width: 1199px) {
   .course3-card {
@@ -7837,7 +7926,7 @@ img {
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px;
+  line-height: 24px;
   padding-bottom: 10px;
 }
 .course3-card__text {
@@ -7923,6 +8012,7 @@ img {
   padding: 20px;
   margin-bottom: 24px;
 }
+
 @media (max-width: 449px) {
   .course4-top {
     flex-wrap: wrap;
@@ -8907,8 +8997,8 @@ img {
 }
 .about2-counter-wrapper {
   position: absolute;
-  right: 50px;
-  top: 27px;
+  right: 20px;
+  top: 10px;
   display: flex;
   align-items: center;
   z-index: 3;
@@ -8934,6 +9024,7 @@ img {
   margin: 0 auto;
   position: relative;
   z-index: 3;
+  padding-left: 35px;
 }
 .about2-content .section-top2 {
   margin-bottom: 30px;
@@ -9232,11 +9323,11 @@ img {
 .features2-item__content-title {
   color: var(--white);
   font-family: var(--title-font);
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .features2-item__content-text {
   color: rgba(255, 255, 255, 0.8);
@@ -9637,6 +9728,7 @@ img {
 @media (max-width: 449px) {
   .team2-bottom {
     margin-top: 30px;
+    justify-content: center;
   }
 }
 .team2-bottom::after {
@@ -12373,8 +12465,8 @@ img {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
   border-bottom: 1px dashed var(--border-color1);
 }
 @media (max-width: 449px) {
@@ -12385,8 +12477,7 @@ img {
 .contact1-info__icon {
   background-color: var(--bg-color1);
   border: 2px solid var(--theme-color3);
-  height: 62px;
-  width: 62px;
+  padding: 15px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -12397,27 +12488,27 @@ img {
   font-family: var(--body-font);
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
+  font-weight: 600;
+  line-height: 20px;
   text-transform: capitalize;
 }
 .contact1-info-content__link {
   color: var(--black2);
   font-family: var(--title-font);
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 18px;
   text-transform: capitalize;
 }
 @media (max-width: 449px) {
   .contact1-info-content__link {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 .contact1-map {
   max-width: 455px;
-  height: 270px;
+  height: 260px;
 }
 @media (max-width: 1199px) {
   .contact1-map {
@@ -12438,7 +12529,7 @@ img {
   line-height: 37px;
   text-align: left;
   text-transform: capitalize;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .contact1-input .form-label {
   color: var(--black2);
@@ -12452,7 +12543,7 @@ img {
   height: 200px;
 }
 .contact1-input-area {
-  margin-bottom: 28px;
+  margin-bottom: 15px;
 }
 .contact1-input-btn-wrapper {
   margin-top: 30px;
@@ -13374,6 +13465,45 @@ img {
 }
 .mtop{
   margin-top: 0px;
+}
+.team2-card-content__head {
+  text-align: center;
+}
+.team2-card-content__head-name {
+  text-align: center;
+}
+.team2-card-content__head-title {
+  text-align: center;
+}
+.team2-card-content__text {
+  text-align: center;
+}
+.team2-card-content{
+  text-align: center;
+}
+.section-top2__text {
+  font-size: 16px;
+  line-height: 20px;
+}
+.heading-slide {
+  padding: 25px 0;
+}
+.heading-slide__title-two {
+  font-size: 23px;
+}
+.heading-slide__title{
+  font-size: 23px;
+}
+.section-padding {
+  padding: 40px 0;
+}
+.features2-item__content-title {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.features2-item__content-text {
+    font-size: 15px;
 }
 }
 

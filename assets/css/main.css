@@ -647,7 +647,12 @@ h1 {
     font-size: 120px;
   }
 }
-
+.event-details {
+  padding: 40px 0px 60px;
+}
+.service-page li{
+  padding-bottom: 10px;
+}
 h2 {
   color: var(--black);
   font-family: var(--title-font);
@@ -7366,7 +7371,7 @@ img {
     background: #ffffff;
     padding: 30px 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;;
     transition: all 0.3s ease;
     height: 100%;
 }
@@ -9553,7 +9558,38 @@ img {
   color: var(--white);
 }
 .team1.page-style {
-  padding-bottom: 90px;
+  padding:50px 0px 30px;
+}
+.policy-wrapper{
+  padding: 60px 0px;
+}
+.policy-wrapper h1{
+  font-size: 30px;
+  line-height: 40px;
+}
+.policy-wrapper p{
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 15px;
+  color: #3f3f3f;
+}
+.policy-wrapper h2{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.padd-row{
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
+  border-radius: 20px;
+}
+.policy-block ul li{
+  list-style-type: disc;
+  color: #3f3f3f;
+}
+.policy-block ul{
+  padding-left: 20px;
 }
 .team1.page-style .team1-card {
   margin: 0 auto 30px auto;
@@ -12349,7 +12385,7 @@ img {
   align-items: center;
   gap: 4px;
   padding-bottom: 12px;
-  color: var(--black2);
+  color: var(--text-color1);
   font-family: var(--body-font);
   font-size: 16px;
   font-style: normal;
@@ -12358,16 +12394,13 @@ img {
   text-transform: capitalize;
 }
 .event-details-content__gallery {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+
   margin-top: 20px;
   margin-bottom: 35px;
 }
 @media (max-width: 449px) {
   .event-details-content__gallery {
-    flex-wrap: wrap;
-    gap: 20px;
+   
   }
 }
 .event-details-content__gallery-thumb {
@@ -13445,6 +13478,17 @@ img {
     padding: 50px 0 30px;
     overflow: hidden;
 }
+.padd-row{
+  margin: 0px 10px;
+  padding: 30px 20px;
+}
+.policy-wrapper {
+  padding: 35px 0px;
+}
+.policy-wrapper h1 {
+  font-size: 26px;
+  line-height: 40px;
+}
   .footer1-widget__logo {
     width: 150px;
   }
@@ -13477,6 +13521,9 @@ img {
 }
 .team2-card-content__text {
   text-align: center;
+}
+.event-details {
+    padding: 20px 0px 40px;
 }
 .team2-card-content{
   text-align: center;
